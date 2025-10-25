@@ -1,0 +1,185 @@
+{
+  "main": {
+    "id": "3a13f81b25c7e59a",
+    "type": "split",
+    "children": [
+      {
+        "id": "e2b2052469933491",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e81fcce994e7c924",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "src/content/posts/测试文章.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "测试文章"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b3936da29d27adb7",
+    "type": "split",
+    "children": [
+      {
+        "id": "56c2333210ee6118",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "413469754f11b7bc",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "126c8ac1ca9621bd",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "052cdaa6b8a6c44e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8e5e2d8649ba07ec",
+    "type": "split",
+    "children": [
+      {
+        "id": "627cbd384d18c98a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a752d8cc67d4f553",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "src/content/posts/测试文章.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "测试文章 的反向链接列表"
+            }
+          },
+          {
+            "id": "2c28014fca240407",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "src/content/posts/测试文章.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "测试文章 的出链列表"
+            }
+          },
+          {
+            "id": "bd7728641b0857e5",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "45d5af38f5d53d83",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "src/content/posts/测试文章.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "测试文章 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:创建新数据库": false
+    }
+  },
+  "active": "e81fcce994e7c924",
+  "lastOpenFiles": [
+    "src/content/posts/guide/index.md",
+    "src/content/posts/guide/cover.jpeg",
+    "src/content/posts/测试文章.md",
+    "测试文章.png",
+    "未命名.base",
+    "CONTRIBUTING.md",
+    "README.md",
+    "Pasted image 20251025142636.png",
+    "测试文章-1.png"
+  ]
+}
