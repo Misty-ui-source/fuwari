@@ -1,6 +1,6 @@
 ---
 title: 如何使用cloudflare workes 功能搭建代理节点
-pubilshed: 2025-10-25
+published: 2025-10-25
 updated: 2025-10-26
 tags:
   - cloudflare
