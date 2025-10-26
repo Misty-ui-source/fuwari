@@ -1,6 +1,6 @@
 ---
 title: 如何使用cloudflare workes 功能搭建代理节点
-published: 2025-10-25
+pubilshed: 2025-10-25
 updated: 2025-10-26
 tags:
   - cloudflare
@@ -18,8 +18,10 @@ draft: false
 之后需要把你自己的域名托管在cf上，后续我会出一个申请免费域名并托管到cf上的教程。
 
 这里附上链接：
-github：[]()https://github.com
-cloudflare: []https://dash.cloudflare.com/
+github：
+https://github.com
+
+cloudflare: https://dash.cloudflare.com/
 
 然后，如果你电脑上没有代理，你需要在你的edge扩展里面下载并运行ilink,用于加速GitHub（如果你有watt tooltik，可以使用它来加速，效果会更好。但是强烈建议要有一个能加速浏览器的代理，例如ilink,保证你自己好。）
 
@@ -43,7 +45,7 @@ cloudflare: []https://dash.cloudflare.com/
 选择我圈出来的文件夹，这个时候我们可以看到四个代码，其中有几个已经失效，代码说明我放在下面：
 ![[e.png]]
 
-我们选择==nat64套壳版混淆文件==，进去选择copy，这个时候回到cloudflare代码编辑部份，删掉原来的代码，将我们刚复制的部分粘贴到上面。
+我们选择套壳混淆，进去选择copy，这个时候回到cloudflare代码编辑部份，删掉原来的代码，将我们刚复制的部分粘贴到上面。
 点击deploy,成功会出现以下图象。
 ![[f.png]]
 
