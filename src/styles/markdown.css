@@ -82,6 +82,9 @@
     .copy-btn.success .success-icon {
         @apply opacity-100
     }
+    .btn-regular-dark {
+        @apply bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition-colors;
+    }
 
     .expressive-code {
         @apply my-4;

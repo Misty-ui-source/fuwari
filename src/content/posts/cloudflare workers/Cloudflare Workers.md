@@ -21,7 +21,8 @@ draft: false
 github：
 https://github.com
 
-cloudflare: https://dash.cloudflare.com/
+cloudflare:
+https://dash.cloudflare.com/
 
 然后，如果你电脑上没有代理，你需要在你的edge扩展里面下载并运行ilink,用于加速GitHub（如果你有watt tooltik，可以使用它来加速，效果会更好。但是强烈建议要有一个能加速浏览器的代理，例如ilink,保证你自己好。）
 
