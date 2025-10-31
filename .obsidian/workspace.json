@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/content/posts/霍尔效应/霍尔效应实验报告.md",
+                "file": "src/content/posts/cloudflare workers/Cloudflare Workers.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "霍尔效应实验报告"
+              "title": "Cloudflare Workers"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/content/posts/霍尔效应/霍尔效应实验报告.md",
+                "file": "src/content/posts/cloudflare workers/Cloudflare Workers.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "霍尔效应实验报告 的大纲"
+              "title": "Cloudflare Workers 的大纲"
             }
           }
         ],
@@ -172,9 +172,10 @@
   },
   "active": "a692cad739086fd0",
   "lastOpenFiles": [
+    "src/assets/images/Cloudflare Workers.png",
+    "src/content/posts/霍尔效应/霍尔效应实验报告.md",
     "src/content/posts/霍尔效应/cover.jpg",
     "src/content/posts/cloudflare workers/Cloudflare Workers.md",
-    "src/content/posts/霍尔效应/霍尔效应实验报告.md",
     "src/content/posts/霍尔效应/12.jpg",
     "src/content/posts/霍尔效应/11.jpeg",
     "src/content/posts/霍尔效应/10.jpg",
