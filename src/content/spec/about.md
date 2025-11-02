@@ -1,9 +1,55 @@
 # About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+This static blog is based on [Fuwari](https://github.com/saicaca/fuwari).
 
 ::github{repo="saicaca/fuwari"}
+## 关于我
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+> - 身份：江苏南京在读大二学生，电子科学与技术专业
+> - 核心能力：熟练使用各种搜索技巧、擅长各种复制粘贴操作
+> - 梦想：不留遗憾
+> - 联系方式： xz011@qq.com
+##  兴趣爱好
+
+- **第五人格** - 庄园苦命人
+- **编程** - 代码就是艺术
+- **学习** - 不是在实验室就是在去实验室的路上
+- **音乐** - 音乐就是动力
+## 关于本站
+
+一个**技术探索与知识分享的网站**
+
+专注于互联网热门新技术探索与团队敏捷开发实践，内容涵盖：
+### 前期：
+-  **实用技巧与软件**
+-  **学习和实验经历**
+-  **一些杂谈**
+### 后期：
+相关知识还在努力学习中，不知道什么时候会尝试写这些方面的文章
+- **Web前后端开发**
+-  **Docker容器化** 
+- **爬虫技术**
+- **数据分析**
+- **算法与数据结构**
+-  **Linux运维**
+## 网站性质
+
+本网站是一个静态网站，这意味着：
+
+- 我们不会在服务器端存储您的个人信息
+- 我们不会主动收集或存储您的个人信息
+- 网站内容是预先生成的，不会动态处理用户数据
+## 内容声明
+
+**所有文章均为原创**，采用以下共享规则：
+
+- **允许**: 转载/修改
+-  **禁止**: 商业用途
+## 技术支持
+
+本站由[cloudflare](https://www.cloudflare.com/) 以及[Netlify](https://www.netlify.com/)  
+提供技术以及服务支持
+
+建立本站的初衷是希望能与自己以及在看的你分享、记录一些实用的技术和日常生活中的趣闻轶事，如果有帮助到你，那我也会非常开心。
+也欢迎各位访客提出建议与批评。
+## My repository:
+::github{repo="Misty-ui-source/fuwari"}
