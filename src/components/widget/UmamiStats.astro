@@ -7,22 +7,23 @@ interface Props {
   class?: string;
   style?: string;
 }
-const { class: className, style } = Astro.props;
+const className = Astro.props.class;
+const style = Astro.props.style;
 ---
 
-<WidgetLayout name={i18n(I18nKey.statistics)} id="umami-stats" class:list={[className]} {style}>
+<WidgetLayout name={i18n(I18nKey.statistics)} id="umami-stats" class={className} style={style}>
     <div class="text-center py-2">
         <div class="text-3xl font-bold text-neutral-900 dark:text-neutral-100" id="total-pageviews">-</div>
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">Total views</div>
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">{i18n(I18nKey.totalViews)}</div>
     </div>
     <div class="grid grid-cols-2 divide-x divide-neutral-200 dark:divide-neutral-700 text-center pt-2">
         <div class="px-2">
             <div class="text-xl font-bold text-neutral-900 dark:text-neutral-100" id="total-visits">-</div>
-            <div class="text-sm text-neutral-500 dark:text-neutral-400">number of visitors</div>
+            <div class="text-sm text-neutral-500 dark:text-neutral-400">{i18n(I18nKey.visits)}</div>
         </div>
         <div class="px-2">
             <div class="text-xl font-bold text-neutral-900 dark:text-neutral-100" id="total-visitors">-</div>
-            <div class="text-sm text-neutral-500 dark:text-neutral-400">number of tourists</div>
+            <div class="text-sm text-neutral-500 dark:text-neutral-400">{i18n(I18nKey.visitors)}</div>
         </div>
     </div>
 </WidgetLayout>
@@ -80,7 +81,7 @@ async function fetchUmamiStats() {
         }
 
     } catch (error) {
-        console.error('fail to get stastics from Umami:', error);
+        console.error('fail to get statistics from Umami:', error);
         const elements = ['total-pageviews', 'total-visits', 'total-visitors'];
         elements.forEach(id => {
             const element = document.getElementById(id);
