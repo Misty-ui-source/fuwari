@@ -32,7 +32,7 @@ const UMAMI_CONFIG = {
     shareToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3ZWJzaXRlSWQiOiJlNzcyZThhMS03M2I5LTQ0MDMtYmMxMi02MTNlMzRhM2RmNTUiLCJpYXQiOjE3NjI1MzA4NTR9.KtKFUT_Tl95WrZ1Qim23fftTuqvrkz_LnSObveofyig'
 };
 
-function formatNumber(num: number): string {
+function formatNumber(num) {
     if (num >= 1000000) {
         return (num / 1000000).toFixed(1) + 'M';
     } else if (num >= 1000) {
