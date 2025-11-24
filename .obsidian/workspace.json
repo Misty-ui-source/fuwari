@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/content/posts/Experiment of circuit/Circuit.md",
+                "file": "src/content/posts/novel/标准模板 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Circuit"
+              "title": "标准模板 1"
             }
           }
         ]
@@ -171,8 +171,13 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "559f1e4b261afbcc",
+  "active": "413469754f11b7bc",
   "lastOpenFiles": [
+    "src/content/posts/未命名.md",
+    "src/content/posts/novel",
+    "src/content/posts/novel/标准模板 1.md",
+    "标准模板.md",
+    "src/content/posts/Experiment of circuit/Circuit.md",
     "src/content/posts/Experiment of circuit/10.png",
     "src/content/posts/Experiment of circuit/9.png",
     "src/content/posts/Experiment of circuit/8.png",
@@ -183,11 +188,7 @@
     "src/content/posts/Experiment of circuit/3.png",
     "src/content/posts/Experiment of circuit/2.png",
     "src/content/posts/Experiment of circuit/1.png",
-    "src/content/posts/Experiment of circuit/cover.png",
-    "src/content/posts/Experiment of circuit/Circuit.md",
     "src/content/posts/Experiment of circuit",
-    "标准模板.md",
-    "src/content/posts/未命名.md",
     "src/content/posts/Animeko and Lanerc/Animeko and Lanerc.md",
     "src/content/posts/Hall effect/Hall effect report.md",
     "src/content/posts/cloudflare workers/Cloudflare Workers.md",
