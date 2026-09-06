@@ -17,10 +17,21 @@ const currentYear = new Date().getFullYear();
         <a class="transition link text-[var(--primary)] font-medium" target="_blank" href="https://astro.build">Astro</a> &
         <a class="transition link text-[var(--primary)] font-medium" target="_blank" href="https://github.com/saicaca/fuwari">Fuwari</a>
     </div>
-    <div style="margin-top: 12px; font-size: 14px; text-align: center;">
-    <a href="https://icp.gov.moe/?keyword=20260282" target="_blank" 
-       style="color: var(--primary); text-decoration: underline; font-weight: 500;">
-       萌ICP备20260282号
-    </a>
-</div>
+    <div id="icp-container" style="margin-top: 12px; font-size: 14px; text-align: center;"></div>
+<script>
+  // 确保在页面加载后执行，且只执行一次
+  document.addEventListener('DOMContentLoaded', function() {
+    const container = document.getElementById('icp-container');
+    if (container && !container.querySelector('a')) {
+      const link = document.createElement('a');
+      link.href = 'https://icp.gov.moe/?keyword=20260282';
+      link.target = '_blank';
+      link.textContent = '萌ICP备20260282号';
+      link.style.color = 'var(--primary)';
+      link.style.textDecoration = 'underline';
+      link.style.fontWeight = '500';
+      container.appendChild(link);
+    }
+  });
+</script>
 </div>
