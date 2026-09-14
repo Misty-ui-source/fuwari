@@ -51,7 +51,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "workspace.json",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -72,8 +72,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -180,7 +179,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "126c8ac1ca9621bd",
+  "active": "413469754f11b7bc",
   "lastOpenFiles": [
     "src/content/posts/Novel/cover.png",
     "src/content/posts/Novel/type of classical novel.md",
