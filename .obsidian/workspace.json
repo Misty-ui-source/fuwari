@@ -55,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:标签1",
+                "query": "tag:标签2",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -152,14 +152,23 @@
               "icon": "lucide-list",
               "title": "about 的大纲"
             }
+          },
+          {
+            "id": "4d4a92ee5cc71316",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -175,8 +184,9 @@
   },
   "active": "559f1e4b261afbcc",
   "lastOpenFiles": [
-    "src/content/posts/Digital Electronics/Combinational Logic Circuit Lab Report.md",
+    "src/content/posts/未命名.base",
     "src/content/posts/esim.gg-easyeuicc/easyeuicc-esim-white-card-guide.md",
+    "src/content/posts/Digital Electronics/Combinational Logic Circuit Lab Report.md",
     "标准模板.md",
     "src/content/posts/esim.gg-easyeuicc/eSIM.gg成功下岸经验分享.md",
     "README.md",
@@ -214,12 +224,10 @@
     "src/content/spec/about.md",
     "src/content/posts/组合逻辑电路",
     "src/content/posts/组合逻辑电路实验.md",
-    "霍尔效应的研究与应用.pdf",
     "src/content/posts/guide/index.md",
     "src/content/posts/markdown-extended.md",
     "2025-10-25.md",
     "().md",
-    "未命名 3.md",
-    "未命名 1.md"
+    "未命名 3.md"
   ]
 }
