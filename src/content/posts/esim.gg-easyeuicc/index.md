@@ -8,7 +8,7 @@ tags:
   - esim
   - 手机号
 category: 手机号攻略
-draft: true
+draft: false
 ---
 # eSIM.gg 小白卡 + EasyEUICC 写卡与收短信排查全记录(成功下岸版)
 申请
