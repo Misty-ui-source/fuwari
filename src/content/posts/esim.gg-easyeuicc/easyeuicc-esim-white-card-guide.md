@@ -1,14 +1,17 @@
 ---
-title: 文章标题
+title: eSIM.gg 小白卡 + EasyEUICC 写卡与收短信排查全记录(成功下岸版)
 published: 2026-09-14
 updated: 2026-09-14
-description: 文章描述
+description:
 image: ./cover.jpg
 tags:
-category: 分类
+  - esim
+  - 手机号
+category: 手机号攻略
 draft: true
 ---
 # eSIM.gg 小白卡 + EasyEUICC 写卡与收短信排查全记录(成功下岸版)
+申请
 
 ## 背景
 

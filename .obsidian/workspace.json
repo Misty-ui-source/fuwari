@@ -55,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:标签2",
+                "query": "tag:标签1",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -187,10 +187,10 @@
   "lastOpenFiles": [
     "src/content/posts/Digital Electronics/Combinational Logic Circuit Lab Report.md",
     "src/content/posts/esim.gg-easyeuicc/easyeuicc-esim-white-card-guide.md",
+    "src/content/posts/未命名.base",
     "src/content/posts/esim.gg-easyeuicc/2.jpg",
     "src/content/posts/esim.gg-easyeuicc/3.jpg",
     "src/content/posts/esim.gg-easyeuicc/1.jpeg",
-    "src/content/posts/未命名.base",
     "标准模板.md",
     "src/content/posts/esim.gg-easyeuicc/eSIM.gg成功下岸经验分享.md",
     "README.md",
