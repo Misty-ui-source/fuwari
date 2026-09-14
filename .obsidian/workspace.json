@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/content/posts/esim.gg-easyeuicc/index.md",
+                "file": "src/content/posts/bybit card/标准模板 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "标准模板 1"
             }
           }
         ]
@@ -183,13 +183,16 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "559f1e4b261afbcc",
+  "active": "413469754f11b7bc",
   "lastOpenFiles": [
+    "src/content/posts/bybit card/yesjuses.md",
+    "src/content/posts/bybit card/标准模板 1.md",
+    "标准模板.md",
     "src/content/posts/esim.gg-easyeuicc/index.md",
+    "src/content/posts/bybit card",
     "src/content/posts/Novel/cover.png",
     "src/content/posts/Novel/type of classical novel.md",
     "src/content/posts/标准模板 1.md",
-    "标准模板.md",
     "src/content/posts/esim.gg-easyeuicc/easyeuicc-esim-white-card-guide.md",
     "src/content/posts/Digital Electronics/Combinational Logic Circuit Lab Report.md",
     "src/content/posts/esim.gg-easyeuicc/cover.jpg",
@@ -225,11 +228,8 @@
     "src/content/posts/霍尔效应/霍尔效应实验报告.md",
     "src/content/posts/组合逻辑电路/组合逻辑电路实验报告.md",
     "src/content/spec/about.md",
-    "src/content/posts/组合逻辑电路",
     "src/content/posts/组合逻辑电路实验.md",
     "src/content/posts/guide/index.md",
-    "src/content/posts/markdown-extended.md",
-    "2025-10-25.md",
-    "().md"
+    "src/content/posts/markdown-extended.md"
   ]
 }
