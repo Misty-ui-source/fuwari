@@ -11,14 +11,10 @@
             "id": "559f1e4b261afbcc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "src/content/posts/标准模板 1.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "标准模板 1"
+              "title": "新标签页"
             }
           }
         ]
@@ -183,7 +179,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "559f1e4b261afbcc",
+  "active": "413469754f11b7bc",
   "lastOpenFiles": [
     "src/content/posts/Novel/cover.png",
     "src/content/posts/Novel/type of classical novel.md",
