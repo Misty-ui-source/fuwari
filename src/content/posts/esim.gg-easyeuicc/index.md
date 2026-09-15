@@ -12,7 +12,7 @@ draft: false
 ---
 # eSIM.gg 小白卡 + EasyEUICC 写卡与收短信排查全记录(成功下岸版)
 
-**申请网址为：[[https://esim.gg/new/number/estonia]]
+**申请网址为：[爱沙尼亚乌龟卡eSIM申请及写入过程](https://esim.gg/new/number/estonia)
 
 ## 背景
 
@@ -35,6 +35,7 @@ draft: false
 - 激活码必须以 `LPA:1$` 开头。
 - EasyEUICC 只能操作小白卡，管不了手机自带 eSIM。
 - 写卡后建议先关闭数据漫游。
+以下内容来自Linux do社区[](https://linux.do/)
 ![](./4.png)
 ---
 
