@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/content/posts/Linux do/Sign in for Linux do.md",
+                "file": "src/content/posts/esim.gg-easyeuicc/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sign in for Linux do"
+              "title": "index"
             }
           }
         ]
@@ -183,10 +183,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "413469754f11b7bc",
+  "active": "559f1e4b261afbcc",
   "lastOpenFiles": [
-    "src/content/posts/你的图片链接2.md",
+    "src/content/posts/esim.gg-easyeuicc/cover.jpg",
+    "src/content/posts/esim.gg-easyeuicc/index.md",
     "src/content/posts/Linux do/Sign in for Linux do.md",
+    "src/content/posts/你的图片链接2.md",
     "src/content/posts/Linux do/4.png",
     "src/content/posts/[预申请系统.md",
     "src/content/posts/Hall effect/Hall effect report.md",
@@ -199,7 +201,6 @@
     "src/content/posts/bybit card/yesjuses.md",
     "src/content/posts/Linux do",
     "src/content/posts/bybit card/cover.jpg",
-    "src/content/posts/esim.gg-easyeuicc/index.md",
     "src/content/posts/Animeko and Lanerc/Animeko and Lanerc.md",
     "src/content/posts/bybit card",
     "src/content/posts/Novel/cover.png",
@@ -207,7 +208,6 @@
     "src/content/posts/标准模板 1.md",
     "src/content/posts/esim.gg-easyeuicc/easyeuicc-esim-white-card-guide.md",
     "src/content/posts/Digital Electronics/Combinational Logic Circuit Lab Report.md",
-    "src/content/posts/esim.gg-easyeuicc/cover.jpg",
     "src/content/posts/esim.gg-easyeuicc/4.png",
     "src/content/posts/未命名.base",
     "src/content/posts/esim.gg-easyeuicc/2.jpg",
@@ -229,7 +229,6 @@
     "src/content/posts/tv.lanerc.app.md",
     "src/content/posts/Animeko and Lanerc/未命名.md",
     "src/content/posts/霍尔效应/霍尔效应实验报告.md",
-    "src/content/posts/组合逻辑电路/组合逻辑电路实验报告.md",
-    "src/content/spec/about.md"
+    "src/content/posts/组合逻辑电路/组合逻辑电路实验报告.md"
   ]
 }
