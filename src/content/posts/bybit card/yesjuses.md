@@ -1,7 +1,7 @@
 ---
 title: 申请了第一张海外借记卡（不过遗憾的是是张海外虚拟u卡）
 published: 2026-09-14
-updated: 2026-09-14
+updated: 2026-09-15
 description: 简单记录一下自己申请bybit卡的过程和成功绑定微信支付宝还有Google play商店的经历，不过我还没有买币，可能只能薅一些免费的羊毛。
 image: ./cover.jpg
 tags:
@@ -9,8 +9,8 @@ tags:
   - 微信
   - 支付宝
   - 标签1
-category: 分类
-draft: true
+category: 海外支付
+draft: false
 ---
 
 # 申请注册过程
@@ -19,7 +19,7 @@ draft: true
 
 ## 核心区别
 
-**视频发布时可能还不支持绑定微信支付宝还有apple pay以及Google play商店，但是主包目前实测是可以的，感兴趣的小伙伴可以去尝试一下**
+**视频发布时可能还不支持绑定微信支付宝还有apple pay以及Google play商店，但是主包目前实测是可以的，感兴趣的小伙伴可以去尝试一下**！
 
-**绑定的过程均不需要挂代理哦**
+**PS:绑定的过程均不需要挂代理哦**
 

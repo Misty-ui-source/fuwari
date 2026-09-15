@@ -35,7 +35,8 @@ draft: false
 - 激活码必须以 `LPA:1$` 开头。
 - EasyEUICC 只能操作小白卡，管不了手机自带 eSIM。
 - 写卡后建议先关闭数据漫游。
-以下内容来自Linux do社区[](https://linux.do/)
+
+以下内容来自[Linux do社区](https://linux.do/)
 ![](./4.png)
 ---
 
