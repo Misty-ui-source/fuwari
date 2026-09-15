@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/content/posts/bybit card/yesjuses.md",
+                "file": "src/content/posts/esim.gg-easyeuicc/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "yesjuses"
+              "title": "index"
             }
           }
         ]
@@ -185,10 +185,11 @@
   },
   "active": "559f1e4b261afbcc",
   "lastOpenFiles": [
-    "src/content/posts/Animeko and Lanerc/Animeko and Lanerc.md",
     "src/content/posts/bybit card/yesjuses.md",
-    "标准模板.md",
     "src/content/posts/esim.gg-easyeuicc/index.md",
+    "src/content/posts/Animeko and Lanerc/Animeko and Lanerc.md",
+    "src/content/posts/cloudflare workers/Cloudflare Workers.md",
+    "标准模板.md",
     "src/content/posts/bybit card",
     "src/content/posts/Novel/cover.png",
     "src/content/posts/Novel/type of classical novel.md",
@@ -213,7 +214,6 @@
     "src/assets/images/zhz.jpg",
     "src/content/posts/cloudflare workers/a.png",
     "src/content/posts/cloudflare workers/d.png",
-    "src/content/posts/cloudflare workers/Cloudflare Workers.md",
     "src/content/posts/Music appreciation/Idea.md",
     "src/content/posts/Music appreciation/cover.png",
     "src/content/posts/Music appreciation",

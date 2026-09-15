@@ -11,7 +11,8 @@ category: 手机号攻略
 draft: false
 ---
 # eSIM.gg 小白卡 + EasyEUICC 写卡与收短信排查全记录(成功下岸版)
-申请
+
+**申请网址为：[[https://esim.gg/new/number/estonia]]
 
 ## 背景
 
