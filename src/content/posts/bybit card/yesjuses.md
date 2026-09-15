@@ -14,4 +14,9 @@ draft: true
 ---
 
 # 申请注册过程
+* 我本人是在YouTube上根据博主：Porter科技迷 的视频一步步做的，我本人使用的是身份证进行的KYC认证，后续如果有小伙伴想要买币有疑问的尽管去学习博主的视频，非常高质。
+* 视频网址是：[【最强U卡】Bybit Card格鲁吉亚卡｜支持订阅GPT｜支持微信、支付宝、Apple Pay等｜中国大陆身份免费申请｜0门槛线上开卡 | 新客福利拉满 | 从申请Bybit交易所到入金充值全过程](https://www.youtube.com/watch?v=DjMRuKxsqyE&t=531s)
+
+##
+
 

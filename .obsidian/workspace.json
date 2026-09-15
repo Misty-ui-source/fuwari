@@ -55,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:标签1",
+                "query": "tag:#核心区别",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
