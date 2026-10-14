@@ -25,12 +25,14 @@
             "id": "adce11696483e6db",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.14.4"
+                "file": "src/content/posts/bilibilicard/card.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "版本说明 1.14.4"
+              "icon": "lucide-file",
+              "title": "card"
             }
           }
         ],
