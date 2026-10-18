@@ -70,7 +70,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:标签1",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -91,8 +91,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -199,7 +198,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "adce11696483e6db",
+  "active": "413469754f11b7bc",
   "lastOpenFiles": [
     "src/content/posts/2024-01-01.md",
     "src/content/posts/blog-rebuild-reflections/blog-rebuild-reflections.md",
