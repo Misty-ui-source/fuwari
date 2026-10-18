@@ -166,7 +166,8 @@ HK 机只有 887MB 内存，Waline 的 better-sqlite3 原生模块直接崩了�
 
 AI 负责写和构建，我负责部署和构思采用。配置层（`src/config/`）的改动我人工确认，内容层（`src/content/`）AI 直接写。这个边界守住的话，AI 再抽风也只影响文章，不会把站点布局搞崩。（当然他天生不是这么智能，已经把站点搞崩了3次了吧，**印象中**）`firefly-post-writing` 的护栏本身也体现了这个倾向：它要求 AI 不去改动非内容配置文件，不删除必需的 frontmatter，保持日期格式稳定。
 
-所以注意边界，
-# 总结
+# 致谢
 
-对于 [9LL.UK](https://9ll.uk/) 那类魔改
+ [9LL.UK](https://9ll.uk/) 
+ [夏夜流萤 - 飞萤之火自无梦的长夜亮起，绽放在终竟的明天。](https://blog.cuteleaf.cn/)
+
