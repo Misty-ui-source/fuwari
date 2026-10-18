@@ -156,11 +156,15 @@ HK 机只有 887MB 内存，Waline 的 better-sqlite3 原生模块直接崩了�
 
 现在的工作流是：
 
-我在聊天里下指令  
+我在聊天里下指令/提交推文  
 → Muse 写 Markdown 到 src/content/posts/  
-→ Muse 跑 ./build.sh（8 步：清缓存 → 拉 Umami → 拉 Steam → 拉 GitHub → 建索引 → AI 摘要 → Astro 构建 → Pagefind）  
-→ 打包 dist（148MB，split 成 80M 两卷）  
+→ Muse 跑 ./build.sh（8 步：清缓存 → 拉 Umami → 拉 Steam → 拉 GitHub → 建索引 → AI 摘要 → Astro 构建 → Pagefind）（**够复杂**！！）  
+→ 打包 dist（148MB，split 成 80M 两卷）  （**免费版最大了吗**？）
 → 我手动在 HK 机部署（curl 下载 → 解压 → chmod → purge CF 缓存）
 
-其实这个流程也很糟心，主要是Muse应对魔改的需求h
+其实这个流程也很糟心，主要是**Muse应对魔改的需求还是太勉强了**，其实很大部分是因为VPS的问题，**跑不起那些Muse改的再好也是落地实现不了**。
+
+AI 负责写和构建，我负责部署和构思采用。配置层（`src/config/`）的改动我人工确认，内容层（`src/content/`）AI 直接写。这个边界守住的话，AI 再抽风也只影响文章，不会把站点布局搞崩。
+
+
 
