@@ -144,15 +144,23 @@ Umami 自托管，跑在 HK 机 Docker（`127.0.0.1:8362`）。前端不直连�
 
 HK 机只有 887MB 内存，Waline 的 better-sqlite3 原生模块直接崩了，nginx 报 502。容器自动重启后恢复，但内存还是紧张。把不用的 whatsapp-proxy 停了，也只释放了 6MB。**2C/887MB 跑 Waline + Umami + Postgres 就是勉强**。（后悔没用其他机子了）
 
-
+**大佬们如果以后光临本站发现评论加载不出来那多半是挂了，访问的人数一多，刷新一多的话香港机子跑的就很勉强了**
 
 **坑 4：Umami 分享 token 调不到 realtime**
 
-统计页的"在线人数"用分享 token 调 `/api/realtime/` 返回 401。排查发现是前端 localStorage 缓存了过期的 token，换了缓存 key（v2）强制刷新后解决。教训：**token 缓存要加版本号**，不然分享链接一变，全站静默失败。
+统计页的"在线人数"用分享 token 调 `/api/realtime/` 返回 401。排查发现是前端 localStorage 缓存了过期的 token，换了缓存 key（v2）强制刷新后解决。
+
+**这个部分是AI做的最差的部分，目前解决起来确实很困难，但是访客视觉上不会收到太大影响。**
 
 ### AI 托管的工作流
 
 现在的工作流是：
 
+我在聊天里下指令  
+→ Muse 写 Markdown 到 src/content/posts/  
+→ Muse 跑 ./build.sh（8 步：清缓存 → 拉 Umami → 拉 Steam → 拉 GitHub → 建索引 → AI 摘要 → Astro 构建 → Pagefind）  
+→ 打包 dist（148MB，split 成 80M 两卷）  
+→ 我手动在 HK 机部署（curl 下载 → 解压 → chmod → purge CF 缓存）
 
+其实这个流程也很糟心，主要是Muse应对魔改的需求h
 
