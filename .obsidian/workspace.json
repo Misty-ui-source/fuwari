@@ -198,11 +198,13 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "adce11696483e6db",
+  "active": "413469754f11b7bc",
   "lastOpenFiles": [
+    "blog-rebuild-reflections",
+    "标准模板.md",
+    "src/content/posts/未命名.md",
     "src/content/posts/zhz-ai-launch/zhz-ai-launch.md",
     "src/content/posts/zhz-ai-launch/cover.webp",
-    "标准模板.md",
     "src/content/posts/zhz-ai-launch",
     "src/content/posts/umami-static-json-cache/umami-static-json-cache.md",
     "src/content/posts/umami-static-json-cache/cover.jpg",
@@ -241,7 +243,6 @@
     "src/content/posts/未命名.base",
     "src/content/posts/esim.gg-easyeuicc/eSIM.gg成功下岸经验分享.md",
     "README.md",
-    "src/content/posts/未命名.md",
     "CONTRIBUTING.md",
     "src/content/posts/().md",
     "src/content/posts/Music appreciation/Idea.md"
