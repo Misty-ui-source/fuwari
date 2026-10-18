@@ -106,11 +106,11 @@ Firefly 相比 Fuwari 最大的变化，是把魔改分成了两层。理解这�
 
 配置搞不定的，才进 `src/components/` 和样式层：
 
-- 统计页（`src/pages/analytics.astro`）：HY 式卡片，加了 GitHub 推送热力图、Steam 数据卡。卡片视觉冻结后只改数据层
+- 统计页（`src/pages/analytics.astro`）：HY 式卡片，加了 GitHub 推送热力图、数据卡。卡片视觉冻结后只改数据层，整体的Umami数据拉取还是不尽人意。
 - Steam 页（`src/pages/steam.astro`）：照着 HY 的 steam 页抄的布局（玩家卡 + 统计卡 + 游戏网格），配色换成咱的青绿 `oklch(0.65 0.15 174)`
 - 全站 hue 174、卡片 3px 纯黑边框：在全局样式里定的
 
-这一层我让 Muse 打下手，但拍板权在我。AI 生成 diff，我 review 后再合——它今天就因为多手改了不该改的，被我骂了四次。
+这一层我让 Muse 打下手，但主要板权在我。AI 生成 diff，我 review 后再合——它今天就因为多手改了不该改的，被我骂了四次。（**一共让我生气了不下16次了吧，应该是。。没数到，反正最后的包体来到了117版**）
 
 **两层之间的边界**
 
