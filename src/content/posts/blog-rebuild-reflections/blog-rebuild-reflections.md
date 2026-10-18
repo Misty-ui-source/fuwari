@@ -129,19 +129,22 @@ Umami 自托管，跑在 HK 机 Docker（`127.0.0.1:8362`）。前端不直连�
 
 统计页还加了 GitHub 推送热力图（构建时 `scripts/fetch-github-activity.py` 拉 52 周 commit 数据）。
 
-### 踩坑记录
+*整体上效果待定吧，这个也是以后修改的一个方向*
+## 踩坑记录
 
-**坑 1：Fuwari 图片子目录**
+**1：Fuwari 图片子目录**
 
-新文章的图片放在 `images/` 子目录，`./images/img22.png` 这种引用，Fuwari 构建直接报 `ImageNotFound`。旧站 11 篇文章都是图片放根目录，Fuwari 的 Astro 配置认不出子目录。教训：**同步到旧站的文章，图片必须打平**，`./images/X` 改成 `./X`。
+新文章的图片放在 `images/` 子目录，`./images/img22.png` 这种引用，Fuwari 构建直接报 `ImageNotFound`。旧站 11 篇文章都是图片放根目录，Fuwari 的 Astro 配置认不出子目录。总结了一下：**同步到旧站的文章，图片必须打平**，`./images/X` 改成 `./X`。
 
-**坑 2：Cloudflare 构建队列**
+**2：Cloudflare 构建队列**
 
-用 GitHub API 一篇一篇推文章，每篇一个 commit，Cloudflare Pages 疯狂触发构建，队列堵死，大部分显示 "No deployment available"。教训：**批量操作要打包**，用 Git Data API 把一篇文章的所有文件打成一个 commit。
+用 GitHub API 一篇一篇推文章，每篇一个 commit，Cloudflare Pages 疯狂触发构建，队列堵死，大部分显示 "No deployment available"。后来给AI讲**批量操作要打包**，用 Git Data API 把一篇文章的所有文件打成一个 commit。
 
-**坑 3：Waline 容器 OOM**
+**3：Waline 容器 OOM**
 
-HK 机只有 887MB 内存，Waline 的 better-sqlite3 原生模块直接崩了，nginx 报 502。容器自动重启后恢复，但内存还是紧张。把不用的 whatsapp-proxy 停了，也只释放了 6MB。教训：**2C/887MB 跑 Waline + Umami + Postgres 就是勉强**，得接受偶尔崩。
+HK 机只有 887MB 内存，Waline 的 better-sqlite3 原生模块直接崩了，nginx 报 502。容器自动重启后恢复，但内存还是紧张。把不用的 whatsapp-proxy 停了，也只释放了 6MB。**2C/887MB 跑 Waline + Umami + Postgres 就是勉强**。（后悔没用其他机子了）
+
+
 
 **坑 4：Umami 分享 token 调不到 realtime**
 
