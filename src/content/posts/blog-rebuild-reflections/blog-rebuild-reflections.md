@@ -48,9 +48,9 @@ Firefly 直接把评论、说说/动态做成了内置的功能。根据一些�
 
 # 将调研成果实际落地
 
-一个很直接的证据是，社区里已经出现了专门适配 Firefly 的 **AI Agent Skill**（`firefly-post-writing`）。这个技能让 AI 能够按照 Firefly 的内容集合（Content Collections）规范，自动将 Markdown 内容放入 `src/content/posts/` 下的正确位置，并生成符合其 schema 的 frontmatter（标题、日期、标签、分类等）。这意味着你的 AI 托管不需要自己去摸索 Firefly 的文件结构，可以直接调用现成的技能来完成发布，降低了 AI 操作出错的概率。
+一个很直接的证据是，社区里已经出现了专门适配 Firefly 的 **AI Agent Skill**（`firefly-post-writing`）。这个技能让 AI 能够按照 Firefly 的内容集合（Content Collections）规范，自动将 Markdown 内容放入 `src/content/posts/` 下的正确位置，并生成符合其 schema 的 frontmatter（标题、日期、标签、分类等）。这意味着你的 AI 托管不需要自己去摸索 Firefly 的文件结构，可以直接调用现成的技能来完成发布，降低了 AI 操作出错的概率。链接：[firefly-post-writing Agent Skill | GodBlf/godblf.github.io](https://skillsmp.com/zh/creators/godblf/godblf.github.io/agents-skills-firefly-post-writing)
 
-
+那有了这些基础，选哪个模型呢，我想起来了前几天白嫖了170token的Muse，Meta旗下刚出的类似沙盒功能的AI助手，平时之帮助我处理一些outlook邮件，评估一下折腾项目的评分，这次为何不挑战一下自己呢
 
 
 
