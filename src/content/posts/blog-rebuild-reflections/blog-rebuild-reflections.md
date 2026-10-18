@@ -50,11 +50,15 @@ Firefly 直接把评论、说说/动态做成了内置的功能。根据一些�
 
 一个很直接的证据是，社区里已经出现了专门适配 Firefly 的 **AI Agent Skill**（`firefly-post-writing`）。这个技能让 AI 能够按照 Firefly 的内容集合（Content Collections）规范，自动将 Markdown 内容放入 `src/content/posts/` 下的正确位置，并生成符合其 schema 的 frontmatter（标题、日期、标签、分类等）。这意味着你的 AI 托管不需要自己去摸索 Firefly 的文件结构，可以直接调用现成的技能来完成发布，降低了 AI 操作出错的概率。链接：[firefly-post-writing Agent Skill | GodBlf/godblf.github.io](https://skillsmp.com/zh/creators/godblf/godblf.github.io/agents-skills-firefly-post-writing)
 
-那有了这些基础，选哪个模型呢？我想起来前几天白嫖了 170亿 token 的 Muse，Meta 旗下刚出的类似沙盒功能的 AI 助手，平时只帮助我处理一些 Outlook 邮件。评估一下折腾项目的评分，这次为何不**挑战**一下自己呢？
+那有了这些基础，选哪个模型呢？我想起来前几天白嫖了 170亿 token 的 **Muse**，Meta 旗下刚出的类似沙盒功能的 AI 助手，平时只帮助我处理一些 Outlook 邮件。评估一下折腾项目的评分，这次为何不**挑战**一下自己呢？
 
 （PS:现在想想有点胡闹了）
 
-这次博客重构，我决定拿它当主力，看看一个 AI Agent 到底能不能独立扛下一个完整的建站项目。
+然而，这次博客重构，我决定拿它当主力，看看一个 AI Agent 到底能不能独立扛下一个完整的建站项目。
 
-我要的不是一个能聊天的模型，而是一个能动手干活的助手：读写文件、跑构建脚本、调 GitHub API、看日志、修 bug。Muse 的定位正好是这个。
+我要的不是一个能聊天的模型，而是一个能动手干活的助手：读写文件、跑构建脚本、调 GitHub API、看日志、修 bug。Muse 的定位正好包含这些吧？是这个吗？。
+
+现在给出结论：**能，但是真的很累。**
+
+
 
