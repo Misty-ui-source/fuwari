@@ -46,7 +46,7 @@ draft: false
 
 Firefly 直接把评论、说说/动态做成了内置的功能。根据一些迁移者的对比，它**内置了评论系统、说说/动态、赞助页面和实验室/工具**，大部分定制都可以通过配置文件完成，不再需要魔改核心代码。对我来说，这意味着 AI 可以操作和发布的“内容类型”变多了——它不仅能写文章，还能直接处理动态、管理内置评论，而不需要我先花时间搭建这些基础设施。这里要致敬一下**大佬**——[[[夏夜流萤 - 飞萤之火自无梦的长夜亮起，绽放在终竟的明天。](https://blog.cuteleaf.cn/)]]
 
-# 将调研成果实际落地
+## 将调研成果实际落地
 
 一个很直接的证据是，社区里已经出现了专门适配 Firefly 的 **AI Agent Skill**（`firefly-post-writing`）。这个技能让 AI 能够按照 Firefly 的内容集合（Content Collections）规范，自动将 Markdown 内容放入 `src/content/posts/` 下的正确位置，并生成符合其 schema 的 frontmatter（标题、日期、标签、分类等）。这意味着你的 AI 托管不需要自己去摸索 Firefly 的文件结构，可以直接调用现成的技能来完成发布，降低了 AI 操作出错的概率。链接：[firefly-post-writing Agent Skill | GodBlf/godblf.github.io](https://skillsmp.com/zh/creators/godblf/godblf.github.io/agents-skills-firefly-post-writing)
 
@@ -59,6 +59,97 @@ Firefly 直接把评论、说说/动态做成了内置的功能。根据一些�
 我要的不是一个能聊天的模型，而是一个能动手干活的助手：读写文件、跑构建脚本、调 GitHub API、看日志、修 bug。Muse 的定位正好包含这些吧？是这个吗？。
 
 现在给出结论：**能，但是真的很累。**
+## 实战：从 Fuwari 到 Firefly 的迁移
+
+### 选型
+
+Firefly 是 CuteLeaf 基于Astro写的博客主题，Fuwari 的继任者。选它有三个原因：
+
+1. **配置集中化**：所有定制项都在 `src/config/` 下，十几个 TypeScript 配置文件，改配置就能换脸，不用动核心代码
+2. **功能内置**：评论、动态、赞助页、实验室都是内置的，Fuwari 时代要自己搭的，Firefly 直接给了
+3. **AI 友好**：目录结构清晰，`src/content/posts/` 放文章，`src/content/dynamic/` 放动态，AI 读写不容易出错
+
+HY 站长（9ll.uk）的魔改版是我的视觉目标：卡片式布局、3px 纯黑边框、青绿色主题（hue 174）。我没直接抄代码，只定了视觉规范，让 Muse 按这个调。
+
+### 迁移过程
+
+**第一步：内容迁移**
+
+旧站 11 篇文章 + About 页，直接拷到 `src/content/posts/`。Fuwari 和 Firefly 的 frontmatter 大体兼容，`title`、`published`、`tags`、`category` 都能直接用。有问题的手动修——比如图片路径，Fuwari 用 `./1.jpg`，Firefly 推荐用 `./images/` 子目录，但实测发现 Fuwari 的构建认不出子目录（这个后面单独说）。
+
+**第二步：视觉定制**
+
+按 HY 风格改了这几处：
+- 全站 hue 174 青绿，卡片 3px 纯黑边框
+- 首页可拖拽贴纸（4 张 AI 生成的图，`src/config/stickerConfig.ts`）
+- Live2D：雪初音（主）+ 金发 z16（右），桌面端显示
+- 轮播图按横竖版分离：横版放桌面，竖版放手机
+
+### 魔改过程：Firefly 的配置分层
+
+Firefly 相比 Fuwari 最大的变化，是把魔改分成了两层。理解这两层，就理解了怎么在不碰核心代码的情况下，把站点改成 HY 那味。
+
+**第一层：配置驱动（零代码改动）**
+
+所有定制项集中在 `src/config/` 下，十几个独立的 TypeScript 文件：
+
+- `siteConfig.ts`：站点标题、描述、URL。我的站名 "Alexander"，横幅 "Lovely Life"
+- `navBarConfig.ts`：顶部导航。我在"我的"下拉里加了 Steam（番组计划下面）、书签分组
+- `profileConfig.ts`：侧边栏个人卡。名字 "zhz"，bio "Hello, I'm zhz."
+- `commentConfig.ts`：评论系统。切到 Waline，`waline.lanerc.me`
+- `backgroundWallpaper.ts`：背景壁纸模式
+- `stickerConfig.ts`：首页可拖拽贴纸（我自研的，4 张 AI 图）
+
+这一层覆盖了 80% 的视觉差异。HY 站的卡片布局、配色，基本都是改配置就能实现。AI 改这一层最安全——改错了也只是显示问题，不会构建失败。
+
+**第二层：组件与样式微调**
+
+配置搞不定的，才进 `src/components/` 和样式层：
+
+- 统计页（`src/pages/analytics.astro`）：HY 式卡片，加了 GitHub 推送热力图、Steam 数据卡。卡片视觉冻结后只改数据层
+- Steam 页（`src/pages/steam.astro`）：照着 HY 的 steam 页抄的布局（玩家卡 + 统计卡 + 游戏网格），配色换成咱的青绿 `oklch(0.65 0.15 174)`
+- 全站 hue 174、卡片 3px 纯黑边框：在全局样式里定的
+
+这一层我让 Muse 打下手，但拍板权在我。AI 生成 diff，我 review 后再合——它今天就因为多手改了不该改的，被我骂了四次。
+
+**两层之间的边界**
+
+内容层（`src/content/`）AI 全权负责写，配置层（`src/config/`）AI 改完我要看一眼，组件层（`src/components/`、`src/pages/`）AI 只给建议不动手。这个边界是血泪教训：v108 那次 AI 自作主张换了头像文件，差点把友链的头像地址搞崩。
+
+**第三步：评论系统**
+
+从 Artalk 换回 Waline（Artalk 2.10.0 停服了）。Waline 跑在 HK 机 Docker 里，`127.0.0.1:8360`，SQLite 存数据。配了个 AI 自动回复 `zhz-ai`——访客留言后，跑在 ID 机上的 Python 服务（智谱 glm-4-flash）60 秒轮询一次，自动回评论。昵称显示 `zhz-ai` + 🤖 勋章，回复内容自称"zhz"。
+
+**第四步：统计系统**
+
+Umami 自托管，跑在 HK 机 Docker（`127.0.0.1:8362`）。前端不直连，走了三层：
+1. 构建时 `scripts/fetch-umami-stats.py` 拉一份静态数据兜底
+2. HK 机 cron 每 5 分钟生成 `/api/stats.json`
+3. 前端优先读 `/api/stats.json`，8 秒超时后降级读构建时数据
+
+统计页还加了 GitHub 推送热力图（构建时 `scripts/fetch-github-activity.py` 拉 52 周 commit 数据）。
+
+### 踩坑记录
+
+**坑 1：Fuwari 图片子目录**
+
+新文章的图片放在 `images/` 子目录，`./images/img22.png` 这种引用，Fuwari 构建直接报 `ImageNotFound`。旧站 11 篇文章都是图片放根目录，Fuwari 的 Astro 配置认不出子目录。教训：**同步到旧站的文章，图片必须打平**，`./images/X` 改成 `./X`。
+
+**坑 2：Cloudflare 构建队列**
+
+用 GitHub API 一篇一篇推文章，每篇一个 commit，Cloudflare Pages 疯狂触发构建，队列堵死，大部分显示 "No deployment available"。教训：**批量操作要打包**，用 Git Data API 把一篇文章的所有文件打成一个 commit。
+
+**坑 3：Waline 容器 OOM**
+
+HK 机只有 887MB 内存，Waline 的 better-sqlite3 原生模块直接崩了，nginx 报 502。容器自动重启后恢复，但内存还是紧张。把不用的 whatsapp-proxy 停了，也只释放了 6MB。教训：**2C/887MB 跑 Waline + Umami + Postgres 就是勉强**，得接受偶尔崩。
+
+**坑 4：Umami 分享 token 调不到 realtime**
+
+统计页的"在线人数"用分享 token 调 `/api/realtime/` 返回 401。排查发现是前端 localStorage 缓存了过期的 token，换了缓存 key（v2）强制刷新后解决。教训：**token 缓存要加版本号**，不然分享链接一变，全站静默失败。
+
+### AI 托管的工作流
+
+现在的工作流是：
 
 
 
