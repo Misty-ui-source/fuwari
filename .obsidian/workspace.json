@@ -200,6 +200,9 @@
   },
   "active": "adce11696483e6db",
   "lastOpenFiles": [
+    "src/content/posts/alexander-console/cover.webp",
+    "src/content/posts/alexander-console/alexander-console.md",
+    "src/content/posts/alexander-console",
     "src/content/posts/blog-rebuild-reflections/5.png",
     "src/content/posts/blog-rebuild-reflections/cover.png",
     "src/content/posts/blog-rebuild-reflections/2.png",
@@ -220,7 +223,6 @@
     "src/content/posts/umami-static-json-cache/umami-static-json-cache.md",
     "src/content/posts/umami-static-json-cache/cover.jpg",
     "src/content/posts/umami-static-json-cache",
-    "src/content/posts/blog-rebuild-diary/cover.png",
     "src/content/posts/blog-rebuild-diary/blog-rebuild-diary.md",
     "src/content/posts/blog-rebuild-diary",
     "src/content/posts/analytics-rebuild-diary/analytics-rebuild-diary.md",
@@ -238,13 +240,11 @@
     "src/content/posts/你的图片链接1.md",
     "src/content/posts/Linux_do",
     "src/content/posts/Animeko and Lanerc/Animeko and Lanerc.md",
-    "src/content/posts/bybit_card",
     "src/content/posts/Novel/type of classical novel.md",
     "src/content/posts/esim.gg-easyeuicc/easyeuicc-esim-white-card-guide.md",
     "src/content/posts/Digital Electronics/Combinational Logic Circuit Lab Report.md",
     "src/content/posts/esim.gg-easyeuicc/eSIM.gg成功下岸经验分享.md",
     "README.md",
-    "CONTRIBUTING.md",
-    "src/content/posts/().md"
+    "CONTRIBUTING.md"
   ]
 }
